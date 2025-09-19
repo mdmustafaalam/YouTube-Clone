@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Clone - Video Platform</title>
+    
+<link rel="shortcut icon" href="./img/Youtube_logo.png" type="image/x-icon">
+
+    <!-- Stylesheet Css -->
+    <link rel="stylesheet" href="./CSS/style.css">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Main Header -->
+    <header class="main-header">
+        <div class="header-left">
+            <button class="menu-toggle" id="menuToggle" onclick="toggleSidebar()">
+                <i class="bi bi-list"></i>
+            </button>
+            <a href="#" class="brand-logo" onclick="navigateToHome()">
+                <img src="./img/logo.png" alt="">
+            </a>
+        </div>
+
+        <div class="search-section">
+            <div class="search-wrapper">
+                <input type="text" class="search-input" placeholder="Search" id="searchInput">
+                <button class="search-button" onclick="performSearch()">
+                    <i class="bi bi-search"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="header-actions">
+            <button class="action-button" onclick="openUploadModal()">
+                <i class="bi bi-plus-square"></i>
+            </button>
+            <button class="action-button">
+                <i class="bi bi-bell"></i>
+            </button>
+            <div class="profile-avatar">
+                <i class="bi bi-person-fill"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sidebar Overlay for Mobile -->
+    <div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
+
+    <!-- Navigation Sidebar -->
+    <nav class="navigation-sidebar" id="navigationSidebar">
+        <div class="sidebar-content">
+            <div class="nav-section">
+                <a href="#" class="nav-item active" onclick="navigateToHome()">
+                    <div class="nav-icon"><i class="bi bi-house-fill"></i></div>
+                    <span class="nav-text">Home</span>
+                </a>
+                <a href="#" class="nav-item" onclick="navigateToTrending()">
+                    <div class="nav-icon"><i class="bi bi-fire"></i></div>
+                    <span class="nav-text">Trending</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <div class="nav-icon"><i class="bi bi-music-note"></i></div>
+                    <span class="nav-text">Music</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <div class="nav-icon"><i class="bi bi-controller"></i></div>
+                    <span class="nav-text">Gaming</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <div class="nav-icon"><i class="bi bi-trophy"></i></div>
+                    <span class="nav-text">Sports</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <div class="nav-icon"><i class="bi bi-lightbulb"></i></div>
+                    <span class="nav-text">Learning</span>
+                </a>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <div class="nav-section">
+                <a href="#" class="nav-item">
+                    <div class="nav-icon"><i class="bi bi-clock-history"></i></div>
+                    <span class="nav-text">History</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <div class="nav-icon"><i class="bi bi-music-note-list"></i></div>
+                    <span class="nav-text">Playlist</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <div class="nav-icon"><i class="bi bi-play-btn"></i></div>
+                    <span class="nav-text">Your Video</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <div class="nav-icon"><i class="bi bi-collection-play"></i></div>
+                    <span class="nav-text">Your Courses</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <div class="nav-icon"><i class="bi bi-stopwatch"></i></div>
+                    <span class="nav-text">Watch Later</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <div class="nav-icon"><i class="bi bi-hand-thumbs-up"></i></div>
+                    <span class="nav-text">Like Video</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <div class="nav-icon"><i class="bi bi-download"></i></div>
+                    <span class="nav-text">Download</span>
+                </a>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <div class="subscriptions-wrapper">
+                <div class="section-title">Subscriptions</div>
+                <div class="nav-section">
+                    <a href="#" class="subscription-item">
+                        <div class="channel-thumbnail" style="background: linear-gradient(45deg, #667eea, #764ba2);">C
+                        </div>
+                        <span class="nav-text">CodeMaster</span>
+                    </a>
+                    <a href="#" class="subscription-item">
+                        <div class="channel-thumbnail" style="background: linear-gradient(45deg, #ff6b6b, #ff8e8e);">W
+                        </div>
+                        <span class="nav-text">WebDev Pro</span>
+                    </a>
+                    <a href="#" class="subscription-item">
+                        <div class="channel-thumbnail" style="background: linear-gradient(45deg, #4ecdc4, #44a08d);">J
+                        </div>
+                        <span class="nav-text">JS Academy</span>
+                    </a>
+                    <a href="#" class="subscription-item">
+                        <div class="channel-thumbnail" style="background: linear-gradient(45deg, #a8edea, #fed6e3);">D
+                        </div>
+                        <span class="nav-text">Design Hub</span>
+                    </a>
+                    <a href="#" class="subscription-item">
+                        <div class="channel-thumbnail" style="background: linear-gradient(45deg, #ff9a9e, #fecfef);">B
+                        </div>
+                        <span class="nav-text">Backend Beast</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <div class="nav-section">
+                <a href="#" class="nav-item">
+                    <div class="nav-icon"><i class="bi bi-gear"></i></div>
+                    <span class="nav-text">Settings</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <div class="nav-icon"><i class="bi bi-flag"></i></div>
+                    <span class="nav-text">Report History</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <div class="nav-icon"><i class="bi bi-question-circle"></i></div>
+                    <span class="nav-text">Help</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <div class="nav-icon"><i class="bi bi-patch-exclamation"></i></div>
+                    <span class="nav-text">Send Feedback</span>
+                </a>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <div class="nav-section">
+                <div class="copyright-title">This project is a learning-based YouTube clone created for educational and demonstration purposes only,
+                   <br> Copyright © 2025 Mustafa Alam</div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Container -->
+    <main class="main-container" id="mainContainer">
+        <!-- Home Page Content -->
+        <div id="homePage" class="page-content">
+            <div class="videos-grid" id="videosGrid">
+                <!-- Videos will be dynamically loaded here -->
+            </div>
+        </div>
+
+        <!-- Video Player Page -->
+        <div id="videoPlayerPage" class="page-content d-none">
+            <div class="row">
+                <!-- Video Player Column -->
+                <div class="col-12 col-xl-8">
+                    <!-- Video Player -->
+                    <div class="video-player-container" onclick="toggleVideoPlayback()">
+                        <div class="player-placeholder">
+                            <div class="player-content">
+                                <div class="play-button-large">
+                                    <i class="bi bi-play-fill" id="mainPlayIcon"></i>
+                                </div>
+                                <h3 id="playerVideoTitle">Amazing Video Title</h3>
+                                <p class="mb-0 text-light opacity-75">Click to play video</p>
+                            </div>
+                        </div>
+
+                        <div class="player-controls">
+                            <div class="controls-row">
+                                <div class="controls-left">
+                                    <button class="control-btn" onclick="toggleVideoPlayback(event)">
+                                        <i class="bi bi-play-fill" id="controlsPlayIcon"></i>
+                                    </button>
+                                    <button class="control-btn" onclick="toggleMute(event)">
+                                        <i class="bi bi-volume-up" id="muteIcon"></i>
+                                    </button>
+                                    <div class="volume-slider">
+                                        <div class="volume-progress"></div>
+                                    </div>
+                                </div>
+                                <div class="controls-right">
+                                    <span class="time-display">2:45 / <span id="totalDuration">45:20</span></span>
+                                    <button class="control-btn">
+                                        <i class="bi bi-gear"></i>
+                                    </button>
+                                    <button class="control-btn">
+                                        <i class="bi bi-arrows-fullscreen"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Video Information -->
+                    <div class="video-header">
+                        <h1 class="video-main-title" id="videoMainTitle">Build a Complete YouTube Clone</h1>
+
+                        <div class="video-stats-actions">
+                            <div class="channel-info">
+                                <div class="channel-avatar-large" id="videoChannelAvatar"
+                                    style="background: linear-gradient(45deg, #667eea, #764ba2);">
+                                    C
+                                </div>
+                                <div class="channel-details">
+                                    <h5 id="videoChannelName">CodeMaster</h5>
+                                    <p class="subscriber-count" id="videoSubscriberCount">850K subscribers</p>
+                                </div>
+                                <button class="subscribe-button" id="subscribeButton" onclick="toggleSubscription()">
+                                    Subscribe
+                                </button>
+                            </div>
+
+                            <div class="video-actions">
+                                <div class="action-group">
+                                    <button class="action-btn" id="likeButton" onclick="toggleLike()">
+                                        <i class="bi bi-hand-thumbs-up"></i>
+                                        <span id="likeCount">25K</span>
+                                    </button>
+                                    <div class="action-separator"></div>
+                                    <button class="action-btn" id="dislikeButton" onclick="toggleDislike()">
+                                        <i class="bi bi-hand-thumbs-down"></i>
+                                        <span id="dislikeCount">500</span>
+                                    </button>
+                                </div>
+                                <button class="action-btn standalone-action">
+                                    <i class="bi bi-share"></i>
+                                    <span>Share</span>
+                                </button>
+                                <button class="action-btn standalone-action">
+                                    <i class="bi bi-download"></i>
+                                    <span>Download</span>
+                                </button>
+                                <button class="action-btn standalone-action">
+                                    <i class="bi bi-three-dots"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Video Description -->
+                    <div class="video-description">
+                        <div class="description-meta">
+                            <span id="videoViewCount">1.2M views</span>
+                            <span id="videoUploadDate">2 days ago</span>
+                        </div>
+                        <p class="description-text" id="videoDescriptionText">
+                            Learn how to build a complete YouTube clone using React and modern web technologies.
+                            This comprehensive tutorial covers frontend development, backend APIs, database design,
+                            and deployment strategies.
+                        </p>
+                    </div>
+
+                    <!-- Comments Section (Desktop) -->
+                    <div class="d-none d-md-block">
+                        <div class="comments-header">
+                            <span class="comments-count" id="commentsCount">3 Comments</span>
+                            <button class="sort-button">
+                                <i class="bi bi-arrow-down-up"></i>
+                                <span>Sort by</span>
+                            </button>
+                        </div>
+
+                        <div class="comment-input-section">
+                            <div class="comment-user-avatar">U</div>
+                            <input type="text" class="comment-input" placeholder="Add a comment...">
+                        </div>
+
+                        <div id="commentsContainer">
+                            <!-- Comments will be loaded here -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Related Videos Column -->
+                <div class="col-12 col-xl-4">
+                    <div class="mb-3">
+                        <h6 class="fw-bold mb-3">Up next</h6>
+                        <div id="relatedVideosContainer">
+                            <!-- Related videos will be loaded here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Comments Section (Mobile) -->
+            <div class="d-md-none mt-4">
+                <div class="comments-header">
+                    <span class="comments-count">3 Comments</span>
+                    <button class="sort-button">
+                        <i class="bi bi-arrow-down-up"></i>
+                        <span>Sort by</span>
+                    </button>
+                </div>
+
+                <div class="comment-input-section">
+                    <div class="comment-user-avatar">U</div>
+                    <input type="text" class="comment-input" placeholder="Add a comment...">
+                </div>
+
+                <div id="mobileCommentsContainer">
+                    <!-- Mobile comments will be loaded here -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Upload Modal -->
+    <div class="modal fade" id="uploadModal" tabindex="-1" aria-labelledby="uploadModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content border-0 shadow-lg">
+                <div class="modal-header border-0 pb-0">
+                    <h5 class="modal-title fw-bold" id="uploadModalLabel">Upload Video</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body pt-4">
+                    <div class="upload-zone mb-4">
+                        <i class="bi bi-cloud-upload upload-icon"></i>
+                        <h6 class="mb-2 fw-bold">Drag and drop video files to upload</h6>
+                        <p class="text-muted mb-3">Your videos will be private until you publish them.</p>
+                        <button class="btn btn-primary px-4 py-2 fw-bold">SELECT FILES</button>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="videoTitle" class="form-label fw-bold">Title</label>
+                        <input type="text" class="form-control" id="videoTitle"
+                            placeholder="Add a title that describes your video">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="videoDescription" class="form-label fw-bold">Description</label>
+                        <textarea class="form-control" id="videoDescription" rows="4"
+                            placeholder="Tell viewers about your video"></textarea>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="videoThumbnail" class="form-label fw-bold">Thumbnail</label>
+                        <input type="file" class="form-control" id="videoThumbnail" accept="image/*">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="videoVisibility" class="form-label fw-bold">Visibility</label>
+                        <select class="form-select" id="videoVisibility">
+                            <option value="private">Private</option>
+                            <option value="unlisted">Unlisted</option>
+                            <option value="public">Public</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="modal-footer border-0 pt-0">
+                    <button type="button" class="btn btn-outline-secondary px-4" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary px-4 fw-bold" onclick="uploadVideo()">Upload</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="./assects/app.js"></script>
+</body>
+
+</html>
