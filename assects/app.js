@@ -22,14 +22,14 @@ const AppState = {
 const videoDatabase = [
     {
         id: 1,
-        title: 'Build a Complete YouTube Clone',
-        channel: 'CodeMaster',
-        channelId: 'codemaster',
+        title: 'Divine Music - The Year Mix Vol.5 [Chill & Ethnic Deep 2024]',
+        channel: 'Devine Music',
+        channelId: 'devineMusic',
         views: 1234567,
         uploadTime: '2 days ago',
-        duration: '45:20',
-        thumbnail: 'https://picsum.photos/640/360?random=1',
-        description: 'Learn how to build a complete YouTube clone using React and modern web technologies. This comprehensive tutorial covers frontend development, backend APIs, database design, and deployment strategies. Perfect for developers who want to create their own video platform.',
+        duration: '2:00:00',
+        youtubeId: 'Ai4PQ9iSzQI',
+        description: '✨ Divine Music - The Year Mix Vol.5 [Chill & Ethnic Deep 2024] ✨\n\nImmerse yourself in the soulful sounds of Chill & Ethnic Deep House 2024. This Year Mix brings together the most uplifting, relaxing, and rhythmic tracks of the year – carefully curated to take you on a musical journey across cultures and emotions. 🌍🎶\n\nWhether you’re studying, working, traveling, or just unwinding, this mix will set the perfect vibe.\n\n🔥 Tracklist Highlights\n(Use timestamps if you want to add later)\n\n🎧 Best enjoyed with headphones for full deep sound experience.\n\n✅ Don’t forget to Like, Comment, and Subscribe for more mixes!\n🔔 Turn on notifications to stay updated with the latest releases.\n\n📌 Follow Divine Music:\n- Instagram: [Your Link]\n- SoundCloud: [Your Link]\n- Spotify: [Your Link]\n\n🌟 Thank you for supporting the channel and spreading the vibes of Chill & Ethnic Deep Music worldwide!\n\n#ChillDeepHouse #EthnicDeep #YearMix2024 #DivineMusic',
         likes: 25420,
         dislikes: 543,
         subscribers: '850K',
@@ -37,14 +37,14 @@ const videoDatabase = [
     },
     {
         id: 2,
-        title: 'React Tutorial for Beginners - Complete Course',
-        channel: 'WebDev Pro',
-        channelId: 'webdevpro',
+        title: 'Javascript in 1 shot in Hindi | part 1',
+        channel: 'Chai aur Code',
+        channelId: 'chaiaurCode',
         views: 892456,
         uploadTime: '1 week ago',
-        duration: '32:15',
-        thumbnail: 'https://picsum.photos/640/360?random=2',
-        description: 'Complete React tutorial covering all the basics and advanced concepts you need to become a React developer. Includes hooks, context, routing, and more.',
+        duration: '9:02:20',
+        youtubeId: 'sscX432bMZo',
+        description: 'Master JavaScript in one shot with this comprehensive Hindi tutorial! This video covers everything from the fundamentals to advanced concepts, making it perfect for beginners and those looking to strengthen their programming skills. Learn about variables, data types, operators, loops, functions, objects, arrays, and events. Dive into DOM manipulation, ES6 features, asynchronous programming, promises, and much more. By the end of this tutorial, you will have a solid foundation in JavaScript and be ready to build dynamic, interactive web applications. Whether you are preparing for web development or enhancing your coding skills, this video provides clear explanations, practical examples, and hands-on exercises to help you understand JavaScript thoroughly.',
         likes: 18234,
         dislikes: 234,
         subscribers: '650K',
@@ -52,44 +52,44 @@ const videoDatabase = [
     },
     {
         id: 3,
-        title: 'JavaScript ES6+ Features You Must Know',
-        channel: 'JS Academy',
-        channelId: 'jsacademy',
-        views: 654321,
-        uploadTime: '3 days ago',
-        duration: '28:45',
-        thumbnail: 'https://picsum.photos/640/360?random=3',
-        description: 'Explore the latest JavaScript ES6+ features with practical examples and use cases. Master modern JavaScript syntax and concepts.',
-        likes: 12456,
-        dislikes: 167,
-        subscribers: '420K',
-        tags: ['javascript', 'es6', 'programming', 'tutorial']
-    },
-    {
-        id: 4,
-        title: 'CSS Grid Layout Masterclass',
-        channel: 'Design Hub',
-        channelId: 'designhub',
+        title: 'Ek Deewane Ki Deewaniyat | Kunaal | Harshvardhan Sonam | Vishal ',
+        channel: 'Play DMF',
+        channelId: 'playDMF',
         views: 423567,
         uploadTime: '5 days ago',
-        duration: '1:15:30',
-        thumbnail: 'https://picsum.photos/640/360?random=4',
-        description: 'Master CSS Grid Layout with this comprehensive tutorial covering all aspects of modern web layout techniques.',
+        duration: '4:00',
+        youtubeId: 'Qo4IOTAbGAM',
+        description: '🎵 DEEWANIYAT Title Track – Ek Deewane Ki Deewaniyat! 💖 Enjoy this soulful and mesmerizing song featuring Harshvardhan Sonam, Vishal, Kaushik Guddu, and Kunaal. Immerse yourself in the heartfelt lyrics and enchanting music that perfectly capture the essence of love, passion, and devotion. ❤️✨ This track brings together amazing vocals, stunning composition, and a melody that stays with you long after the song ends. Perfect for all music lovers 🎶, romantics 💌, and fans of soulful tunes. Don’t forget to like 👍, share 📤, and subscribe 🔔 for more beautiful music!',
         likes: 8567,
         dislikes: 123,
         subscribers: '320K',
         tags: ['css', 'grid', 'layout', 'design']
     },
     {
+        id: 4,
+        title: 'Web Developer Roadmap (2025) - Everything is Changing',
+        channel: 'Code with Carry',
+        channelId: 'codeWithHarry',
+        views: 654321,
+        uploadTime: '3 days ago',
+        duration: '21:47',
+        youtubeId: 'X8BYu3dMKf0',
+        description: '🌐 Web Developer Roadmap 2025 – The Ultimate Guide! 🚀 Everything in web development is evolving, and this video breaks down the latest tools, technologies, and skills you need to stay ahead. Learn about HTML, CSS, JavaScript, modern frameworks like React, Vue, and Angular ⚛️, backend technologies like Node.js, databases 🗄️, DevOps tools ⚙️, version control with Git 🖇️, and much more. Whether you are a beginner starting your coding journey or an experienced developer wanting to upskill, this roadmap will guide you step-by-step. Stay updated, build amazing projects 💻, and prepare yourself for the ever-changing world of web development in 2025! ✨💡',
+        likes: 12456,
+        dislikes: 167,
+        subscribers: '420K',
+        tags: ['javascript', 'es6', 'programming', 'tutorial']
+    },
+    {
         id: 5,
-        title: 'Node.js Backend Development Complete Guide',
-        channel: 'Backend Beast',
-        channelId: 'backendbeast',
-        views: 789123,
+        title: 'Amazon 4k : The Journey Into Amazon Rainforest | Nature’s Green Paradise',
+        channel: 'Whats Your Priority',
+        channelId: 'WhatsYourPriority',
+        views: 7891232,
         uploadTime: '1 day ago',
-        duration: '52:10',
-        thumbnail: 'https://picsum.photos/640/360?random=5',
-        description: 'Build scalable backend applications with Node.js and Express. Learn best practices, authentication, database integration, and deployment.',
+        duration: '19:56',
+        youtubeId: 'Wa9wv5qV1Uk',
+        description: '🌿 Step into the heart of the Amazon Rainforest with our awe-inspiring 4K ULTRA HD documentary! Experience a vivid exploration of one of the planet’s most extraordinary ecosystems. 🐆 Discover the mesmerizing sights and soothing sounds of the jungle as you encounter its incredible inhabitants in their natural splendor. 🌳\n\nFrom the elusive Jaguar 🐆 and playful Golden Lion Tamarin 🐒 to the gentle Sloth 🦥 and mighty Capybara 🐾, this film immerses you in the vibrant diversity of the rainforest. Marvel at the stealth of the Caiman 🐊, the charm of the Emperor Tamarin 👑🐒, the brilliance of the Toucan 🐦, and the agility of the Squirrel Monkey 🐒. You’ll also meet other fascinating creatures like the Peccary 🐗, Coati 🦝, Tapir 🐘, Armadillo 🦔, and Capuchin Monkey 🐵.\n\nLet the tranquil melodies 🎶 and authentic jungle ambiance wash over you. Whether you are seeking relaxation 😌, inspiration ✨, or a deeper connection to nature 🌎, this film offers a perfect escape. 🌺🌿',
         likes: 15678,
         dislikes: 289,
         subscribers: '590K',
@@ -104,6 +104,7 @@ const videoDatabase = [
         uploadTime: '6 days ago',
         duration: '38:25',
         thumbnail: 'https://picsum.photos/640/360?random=6',
+        youtubeId: 'Ai4PQ9iSzQI',
         description: 'Learn database design principles and best practices for creating efficient and scalable database systems.',
         likes: 7234,
         dislikes: 89,
@@ -119,6 +120,7 @@ const videoDatabase = [
         uploadTime: '1 days ago',
         duration: '1:52:25',
         thumbnail: 'https://picsum.photos/640/360?random=7',
+        youtubeId: 'Ai4PQ9iSzQI',
         description: 'The links included in this description might be affiliate links. I may receive a small commission if you purchase a product with this link. There is non-additional charge to you. Thank you very much!',
         likes: 56894,
         dislikes: 178,
@@ -134,6 +136,7 @@ const videoDatabase = [
         uploadTime: '1 days ago',
         duration: '7:20',
         thumbnail: 'https://picsum.photos/640/360?random=8',
+        youtubeId: 'Ai4PQ9iSzQI',
         description: 'The Amazon Rainforest is the largest tropical rainforest in the world, spanning over 5.5 million square kilometers (2.1 million square miles) and covering parts of nine countries in South America, with the majority located in Brazil. It plays a critical role in global environmental systems and is often referred to as the "lungs of the Earth" because it produces approximately 20% of the worlds oxygen through photosynthesis.',
         likes: 45126,
         dislikes: 112,
@@ -149,6 +152,7 @@ const videoDatabase = [
         uploadTime: '31 Aug 2025',
         duration: '2:10:59',
         thumbnail: 'https://picsum.photos/640/360?random=9',
+        youtubeId: 'Ai4PQ9iSzQI',
         description: 'Struggling to silence distractions and dive into serious work? 🎧 You have found your ultimate focus companion! Welcome to "Productivity Power," your new go-to for deep work music that truly transforms your workspace. This is not just background noise; its a meticulously crafted soundscape designed to elevate your concentration, reduce distractions, and help you achieve your most ambitious goals.',
         likes: 4756,
         dislikes: 120,
@@ -164,6 +168,7 @@ const videoDatabase = [
         uploadTime: '3 years ago',
         duration: '30:00',
         thumbnail: 'https://picsum.photos/640/360?random=10',
+        youtubeId: 'Ai4PQ9iSzQI',
         description: 'This is second official channel of Ultra Beats, here we will publish long version beats. Make sure to subscribe and activate notification bell ➜ ',
         likes: 22000,
         dislikes: 819,
@@ -179,6 +184,7 @@ const videoDatabase = [
         uploadTime: '4 months ago',
         duration: '54:01',
         thumbnail: 'https://picsum.photos/640/360?random=11',
+        youtubeId: 'Ai4PQ9iSzQI',
         description: 'If you’re taking the time to read this, I wish you an inspiring life where you achieve all your hopes and dreams starting from this moment.',
         likes: 13000,
         dislikes: 78,
@@ -194,6 +200,7 @@ const videoDatabase = [
         uploadTime: '29 April 2024',
         duration: '3:23',
         thumbnail: 'https://picsum.photos/640/360?random=12',
+        youtubeId: 'Ai4PQ9iSzQI',
         description: 'Here you’ll find the best relaxing and catchy beats and instrumental music, perfect for studying, working, or just unwinding. All tracks are instrumental, designed to create an amazing musical atmosphere for you. ✨ Subscribe to our channel so you never miss a new video!',
         likes: 4500,
         dislikes: 112,
@@ -392,9 +399,18 @@ const SidebarManager = {
 };
 
 // Video Management
+// Complete VideoManager - Replace your existing VideoManager object with this
 const VideoManager = {
+    currentVideoId: null,
+    playerLoading: false,
+
     loadHomeVideos() {
         const container = document.getElementById('videosGrid');
+        if (!container) {
+            console.error('Videos grid container not found');
+            return;
+        }
+
         container.innerHTML = '';
 
         videoDatabase.forEach((video, index) => {
@@ -404,131 +420,377 @@ const VideoManager = {
     },
 
     createVideoCard(video, index) {
-        const card = DOMHelpers.createElement('div', 'video-card fade-in');
+        const card = document.createElement('div');
+        card.className = 'video-card fade-in';
         card.style.animationDelay = `${index * 100}ms`;
         card.onclick = () => this.selectVideo(video.id);
 
+        const thumbnailUrl = video.youtubeId
+            ? `https://img.youtube.com/vi/${video.youtubeId}/maxresdefault.jpg`
+            : video.thumbnail;
+
         card.innerHTML = `
-                    <div class="video-thumbnail-container">
-                        <img src="${video.thumbnail}" alt="${video.title}" class="video-thumbnail">
-                        <div class="video-duration-badge">${video.duration}</div>
-                        <div class="thumbnail-overlay">
-                            <div class="play-icon-overlay">
-                                <i class="bi bi-play-fill fs-4"></i>
-                            </div>
-                        </div>
+            <div class="video-thumbnail-container">
+                <img src="${thumbnailUrl}" alt="${video.title}" class="video-thumbnail" 
+                     onerror="this.src='${video.thumbnail}'">
+                <div class="video-duration-badge">${video.duration}</div>
+                <div class="thumbnail-overlay">
+                    <div class="play-icon-overlay">
+                        <i class="bi bi-play-fill fs-4"></i>
                     </div>
-                    <div class="video-info-section">
-                        <div class="creator-avatar" style="background: ${Utils.getChannelGradient(video.channelId)}">
-                            ${video.channel[0]}
-                        </div>
-                        <div class="video-details">
-                            <h3 class="video-title text-truncate-2">${video.title}</h3>
-                            <div class="video-metadata">
-                                <div>${video.channel}</div>
-                                <div>${Utils.formatViewCount(video.views)} views • ${video.uploadTime}</div>
-                            </div>
-                        </div>
+                </div>
+            </div>
+            <div class="video-info-section">
+                <div class="creator-avatar" style="background: ${Utils.getChannelGradient(video.channelId)}">
+                    ${video.channel[0]}
+                </div>
+                <div class="video-details">
+                <h3 class="video-title">${video.title}</h3>
+                    <div class="video-metadata">
+                        <div>${video.channel}</div>
+                        <div>${Utils.formatViewCount(video.views)} views • ${video.uploadTime}</div>
                     </div>
-                `;
+                </div>
+            </div>
+        `;
 
         return card;
     },
 
     selectVideo(videoId) {
         const video = videoDatabase.find(v => v.id === videoId);
-        if (!video) return;
+        if (!video) {
+            console.error('Video not found:', videoId);
+            return;
+        }
+
+        // Prevent duplicate selections
+        if (this.currentVideoId === videoId && AppState.currentPage === 'video') {
+            console.log('Same video already loaded');
+            return;
+        }
+
+        console.log('Selecting video:', video.title);
 
         AppState.selectedVideo = video;
         AppState.currentPage = 'video';
+        this.currentVideoId = videoId;
 
-        this.updateVideoPlayerContent(video);
+        // Show video page first
         this.showVideoPage();
+
+        // Update content
+        this.updateVideoPlayerContent(video);
         this.loadRelatedVideos(videoId);
         this.loadComments(videoId);
 
         // Close mobile sidebar
-        if (AppState.sidebar.isMobile && AppState.sidebar.isOpen) {
+        if (AppState.sidebar && AppState.sidebar.isMobile && AppState.sidebar.isOpen) {
             SidebarManager.toggle();
         }
 
-        // Scroll to top smoothly
+        // Scroll to top
         window.scrollTo({ top: 0, behavior: 'smooth' });
     },
 
     updateVideoPlayerContent(video) {
-        // Update video player elements
-        document.getElementById('playerVideoTitle').textContent = video.title;
-        document.getElementById('videoMainTitle').textContent = video.title;
-        document.getElementById('videoChannelName').textContent = video.channel;
-        document.getElementById('videoSubscriberCount').textContent = `${video.subscribers} subscribers`;
-        document.getElementById('likeCount').textContent = Utils.formatLikeCount(video.likes);
-        document.getElementById('dislikeCount').textContent = Utils.formatLikeCount(video.dislikes);
-        document.getElementById('videoViewCount').textContent = `${Utils.formatViewCount(video.views)} views`;
-        document.getElementById('videoUploadDate').textContent = video.uploadTime;
-        document.getElementById('videoDescriptionText').textContent = video.description;
-        document.getElementById('totalDuration').textContent = video.duration;
+        console.log('Updating video player content for:', video.title);
 
-        // Update channel avatar
-        const channelAvatar = document.getElementById('videoChannelAvatar');
-        channelAvatar.textContent = video.channel[0];
-        channelAvatar.style.background = Utils.getChannelGradient(video.channelId);
+        // Update all text elements
+        this.updateVideoInfo(video);
 
-        // Update subscribe button
+        // Create/update video player
+        if (video.youtubeId) {
+            this.createYouTubePlayer(video.youtubeId);
+        } else {
+            this.showVideoUnavailable();
+        }
+
+        // Update interactive elements
         this.updateSubscribeButton(video.channelId);
-
-        // Update like/dislike buttons
         this.updateLikeDislikeButtons(video.id);
     },
 
+    updateVideoInfo(video) {
+        const elements = {
+            'playerVideoTitle': video.title,
+            'videoMainTitle': video.title,
+            'videoChannelName': video.channel,
+            'videoSubscriberCount': `${video.subscribers} subscribers`,
+            'likeCount': Utils.formatLikeCount(video.likes),
+            'dislikeCount': Utils.formatLikeCount(video.dislikes),
+            'videoViewCount': `${Utils.formatViewCount(video.views)} views`,
+            'videoUploadDate': video.uploadTime,
+            'videoDescriptionText': video.description,
+            'totalDuration': video.duration
+        };
+
+        Object.entries(elements).forEach(([id, text]) => {
+            const element = document.getElementById(id);
+            if (element) {
+                element.textContent = text;
+            } else {
+                console.warn(`Element not found: ${id}`);
+            }
+        });
+
+        // Update channel avatar
+        const channelAvatar = document.getElementById('videoChannelAvatar');
+        if (channelAvatar) {
+            channelAvatar.textContent = video.channel[0];
+            channelAvatar.style.background = Utils.getChannelGradient(video.channelId);
+        }
+    },
+
+    createYouTubePlayer(youtubeId) {
+        console.log('Creating YouTube player for:', youtubeId);
+
+        const playerContainer = document.querySelector('.video-player-container');
+        if (!playerContainer) {
+            console.error('Video player container not found in DOM');
+            return;
+        }
+
+        // Prevent multiple simultaneous loads
+        if (this.playerLoading) {
+            console.log('Player already loading, skipping...');
+            return;
+        }
+
+        // Check if same video is already loaded
+        const existingIframe = playerContainer.querySelector('iframe');
+        if (existingIframe && existingIframe.src.includes(youtubeId)) {
+            console.log('Same video already loaded');
+            return;
+        }
+
+        this.playerLoading = true;
+
+        // Clear container
+        playerContainer.innerHTML = '';
+        playerContainer.onclick = null;
+
+        // Create loading state
+        const loadingDiv = document.createElement('div');
+        loadingDiv.className = 'video-loading-state';
+        loadingDiv.innerHTML = `
+            <div class="loading-spinner"></div>
+            <span>Loading video...</span>
+        `;
+        playerContainer.appendChild(loadingDiv);
+
+        // Create iframe
+        const iframe = document.createElement('iframe');
+        iframe.width = '100%';
+        iframe.height = '100%';
+        iframe.frameBorder = '0';
+        iframe.allowFullscreen = true;
+        iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+        iframe.referrerPolicy = 'strict-origin-when-cross-origin';
+        iframe.style.cssText = 'border: none; border-radius: 8px; background: #000;';
+
+        // Set up event handlers before setting src
+        iframe.onload = () => {
+            console.log('YouTube iframe loaded successfully');
+            this.playerLoading = false;
+
+            // Replace loading with iframe
+            if (playerContainer.querySelector('.video-loading-state')) {
+                playerContainer.innerHTML = '';
+                playerContainer.appendChild(iframe);
+            }
+        };
+
+        iframe.onerror = (error) => {
+            console.error('YouTube iframe failed to load:', error);
+            this.playerLoading = false;
+            this.showVideoUnavailable();
+        };
+
+        // Set source after handlers are attached
+        iframe.src = `https://www.youtube.com/embed/${youtubeId}?rel=0&modestbranding=1&fs=1&enablejsapi=1`;
+
+        // Fallback timeout
+        setTimeout(() => {
+            if (this.playerLoading) {
+                console.log('Loading timeout, showing iframe anyway');
+                this.playerLoading = false;
+
+                if (playerContainer.querySelector('.video-loading-state')) {
+                    playerContainer.innerHTML = '';
+                    playerContainer.appendChild(iframe);
+                }
+            }
+        }, 5000);
+    },
+
+    showVideoUnavailable() {
+        console.log('Showing video unavailable state');
+
+        const playerContainer = document.querySelector('.video-player-container');
+        if (!playerContainer) return;
+
+        this.playerLoading = false;
+
+        playerContainer.innerHTML = `
+            <div class="video-unavailable-state">
+                <i class="bi bi-exclamation-triangle-fill"></i>
+                <h5>Video unavailable</h5>
+                <p>This video cannot be played right now.</p>
+                <button class="btn btn-outline-light btn-sm" onclick="location.reload()">
+                    <i class="bi bi-arrow-clockwise"></i>
+                    Refresh
+                </button>
+            </div>
+        `;
+    },
+
     showVideoPage() {
-        document.getElementById('homePage').classList.add('d-none');
-        document.getElementById('videoPlayerPage').classList.remove('d-none');
+        const homePage = document.getElementById('homePage');
+        const videoPage = document.getElementById('videoPlayerPage');
+
+        if (homePage && videoPage) {
+            homePage.classList.add('d-none');
+            videoPage.classList.remove('d-none');
+            console.log('Switched to video page');
+        } else {
+            console.error('Page elements not found');
+        }
     },
 
     showHomePage() {
-        document.getElementById('videoPlayerPage').classList.add('d-none');
-        document.getElementById('homePage').classList.remove('d-none');
+        const homePage = document.getElementById('homePage');
+        const videoPage = document.getElementById('videoPlayerPage');
+
+        if (homePage && videoPage) {
+            videoPage.classList.add('d-none');
+            homePage.classList.remove('d-none');
+            console.log('Switched to home page');
+        }
+
         AppState.selectedVideo = null;
         AppState.currentPage = 'home';
+        this.currentVideoId = null;
+        this.playerLoading = false;
     },
 
-    loadRelatedVideos(currentVideoId) {
-        const container = document.getElementById('relatedVideosContainer');
-        const relatedVideos = videoDatabase.filter(v => v.id !== currentVideoId);
+    // Fixed loadRelatedVideos method - Replace this method in your VideoManager
 
+    loadRelatedVideos(currentVideoId) {
+        console.log('Loading related videos for video ID:', currentVideoId);
+
+        const container = document.getElementById('relatedVideosContainer');
+        if (!container) {
+            console.error('Related videos container not found');
+            // Try alternative container names
+            const altContainer = document.querySelector('[id*="related"]') ||
+                document.querySelector('.related-videos') ||
+                document.querySelector('#videoPlayerPage .col-xl-4 > div');
+
+            if (altContainer) {
+                console.log('Found alternative container:', altContainer);
+            } else {
+                console.error('No related videos container found at all');
+                return;
+            }
+        }
+
+        // Get related videos (all except current)
+        const relatedVideos = videoDatabase.filter(v => v.id !== currentVideoId);
+        console.log(`Found ${relatedVideos.length} related videos`);
+
+        if (relatedVideos.length === 0) {
+            console.warn('No related videos found');
+            container.innerHTML = '<p class="text-muted">No related videos available</p>';
+            return;
+        }
+
+        // Clear container
         container.innerHTML = '';
 
-        relatedVideos.forEach((video, index) => {
+        // Create "Up next" header if it doesn't exist
+        const existingHeader = container.previousElementSibling;
+        if (!existingHeader || !existingHeader.textContent.includes('Up next')) {
+            const header = document.createElement('h6');
+            header.className = 'fw-bold mb-3 text-white';
+            header.textContent = 'Up next';
+            container.parentNode.insertBefore(header, container);
+        }
+
+        // Add related videos
+        relatedVideos.slice(0, 10).forEach((video, index) => {
             const relatedItem = this.createRelatedVideoItem(video, index);
             container.appendChild(relatedItem);
+            console.log(`Added related video: ${video.title}`);
         });
+
+        console.log('Related videos loaded successfully');
     },
 
     createRelatedVideoItem(video, index) {
-        const item = DOMHelpers.createElement('div', 'related-video-item slide-in');
+        const item = document.createElement('div');
+        item.className = 'related-video-item mb-3';
+        item.style.cursor = 'pointer';
         item.style.animationDelay = `${index * 50}ms`;
-        item.onclick = () => this.selectVideo(video.id);
+
+        // Add click handler
+        item.onclick = () => {
+            console.log('Clicking related video:', video.title);
+            this.selectVideo(video.id);
+        };
+
+        const thumbnailUrl = video.youtubeId
+            ? `https://img.youtube.com/vi/${video.youtubeId}/mqdefault.jpg`
+            : video.thumbnail;
 
         item.innerHTML = `
-                    <img src="${video.thumbnail}" alt="${video.title}" class="related-thumbnail">
-                    <div class="related-info">
-                        <h6 class="related-title text-truncate-2">${video.title}</h6>
-                        <div class="related-meta">
-                            <div>${video.channel}</div>
-                            <div>${Utils.formatViewCount(video.views)} views • ${video.uploadTime}</div>
-                        </div>
+        <div class="d-flex gap-2">
+            <div class="related-thumbnail-wrapper position-relative flex-shrink-0">
+                <img src="${thumbnailUrl}" 
+                     alt="${video.title}" 
+                     class="related-thumbnail rounded"
+                     style="width: 160px; height: 90px; object-fit: cover; background: #333;"
+                     onerror="this.src='${video.thumbnail}'">
+                <div class="related-duration position-absolute bottom-0 end-0 bg-dark text-white px-1 rounded" 
+                     style="font-size: 12px; margin: 4px;">
+                    ${video.duration}
+                </div>
+            </div>
+            <div class="related-info flex-grow-1">
+                <h6 class="related-title text-white mb-1" 
+                    style="font-size: 14px; line-height: 1.3; font-weight: 500;">
+                    ${video.title}
+                </h6>
+                <div class="related-meta">
+                    <div class="related-channel text-muted mb-1" style="font-size: 13px;">
+                        ${video.channel}
                     </div>
-                `;
+                    <div class="related-stats text-muted" style="font-size: 12px;">
+                        ${Utils.formatViewCount(video.views)} views • ${video.uploadTime}
+                    </div>
+                </div>
+            </div>
+        </div>
+    `;
+
+        // Add hover effect
+        item.addEventListener('mouseenter', function () {
+            this.style.backgroundColor = 'rgba(255, 255, 255, 0.1)';
+        });
+
+        item.addEventListener('mouseleave', function () {
+            this.style.backgroundColor = 'transparent';
+        });
 
         return item;
     },
 
     updateSubscribeButton(channelId) {
         const button = document.getElementById('subscribeButton');
-        const isSubscribed = AppState.user.subscriptions.has(channelId);
+        if (!button) return;
 
-        DOMHelpers.toggleClass(button, 'subscribed', isSubscribed);
+        const isSubscribed = AppState.user && AppState.user.subscriptions.has(channelId);
+        button.classList.toggle('subscribed', isSubscribed);
         button.textContent = isSubscribed ? 'Subscribed' : 'Subscribe';
     },
 
@@ -536,19 +798,29 @@ const VideoManager = {
         const likeButton = document.getElementById('likeButton');
         const dislikeButton = document.getElementById('dislikeButton');
 
-        // Reset styles
-        likeButton.classList.remove('active');
-        dislikeButton.classList.remove('active');
+        if (likeButton && dislikeButton) {
+            likeButton.classList.remove('active');
+            dislikeButton.classList.remove('active');
 
-        // Apply active styles
-        if (AppState.user.likedVideos.has(videoId)) {
-            likeButton.classList.add('active');
-        }
-        if (AppState.user.dislikedVideos.has(videoId)) {
-            dislikeButton.classList.add('active');
+            if (AppState.user && AppState.user.likedVideos.has(videoId)) {
+                likeButton.classList.add('active');
+            }
+            if (AppState.user && AppState.user.dislikedVideos.has(videoId)) {
+                dislikeButton.classList.add('active');
+            }
         }
     }
 };
+
+// Make sure to call this when the page loads
+document.addEventListener('DOMContentLoaded', function () {
+    console.log('DOM loaded, initializing VideoManager');
+
+    // Load initial videos
+    if (typeof VideoManager !== 'undefined') {
+        VideoManager.loadHomeVideos();
+    }
+});
 
 // Comments Management
 const CommentsManager = {

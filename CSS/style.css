@@ -370,6 +370,8 @@ body {
     gap: 24px;
 }
 
+
+
 .video-card {
     background: white;
     border-radius: 16px;
@@ -1108,6 +1110,9 @@ body {
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
+    color: #fff !important;
+    opacity: 1 !important;
+    visibility: visible !important;
 }
 
 .cursor-pointer {
@@ -1120,4 +1125,351 @@ body {
 
 .modal-body{
     padding: 3rem !important;
+}
+
+
+
+/* Complete Video Player CSS - Add this to your style.css */
+
+/* Video Player Container - Fixed positioning and sizing */
+.video-player-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    background: #000;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+/* All content inside container should be absolutely positioned */
+.video-player-container > * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* YouTube iframe styling */
+.video-player-container iframe {
+    border: none;
+    border-radius: 8px;
+    background: #000;
+    z-index: 2;
+}
+
+/* Loading state - prevents layout shift */
+.video-loading-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+    color: #fff;
+    z-index: 1;
+}
+
+.loading-spinner {
+    width: 40px;
+    height: 40px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-top: 3px solid #fff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 15px;
+}
+
+.video-loading-state span {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 400;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Video unavailable state */
+.video-unavailable-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+    z-index: 1;
+}
+
+.video-unavailable-state i {
+    font-size: 2.5rem;
+    color: #ff6b6b;
+    margin-bottom: 1rem;
+    opacity: 0.8;
+}
+
+.video-unavailable-state h5 {
+    margin-bottom: 0.5rem;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.video-unavailable-state p {
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 1.5rem;
+    font-size: 14px;
+}
+
+.video-unavailable-state .btn {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #fff;
+    font-size: 13px;
+    padding: 8px 16px;
+    transition: all 0.3s ease;
+}
+
+.video-unavailable-state .btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.5);
+    color: #fff;
+    transform: translateY(-1px);
+}
+
+/* Related videos styling */
+.related-video-item {
+    display: flex;
+    gap: 12px;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-bottom: 12px;
+}
+
+.related-video-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.related-thumbnail-wrapper {
+    position: relative;
+    flex-shrink: 0;
+}
+
+.related-thumbnail {
+    width: 160px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 6px;
+    background: #333;
+}
+
+.related-duration {
+    position: absolute;
+    bottom: 4px;
+    right: 4px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.related-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.related-title {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.3;
+    margin-bottom: 4px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    color: #fff;
+}
+
+.related-meta {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.related-channel {
+    margin-bottom: 2px;
+}
+
+.related-stats {
+    font-size: 12px;
+}
+
+/* Video thumbnails in grid */
+.video-thumbnail {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background: #333;
+    transition: opacity 0.3s ease;
+}
+
+.video-thumbnail[src=""],
+.related-thumbnail[src=""] {
+    opacity: 0;
+}
+
+/* Fade in animations */
+.fade-in {
+    animation: fadeIn 0.5s ease forwards;
+    opacity: 0;
+}
+
+.slide-in {
+    animation: slideIn 0.3s ease forwards;
+    opacity: 0;
+    transform: translateY(10px);
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+    .video-player-container {
+        margin-bottom: 15px;
+        border-radius: 6px;
+    }
+    
+    .video-player-container iframe {
+        border-radius: 6px;
+    }
+    
+    .video-unavailable-state {
+        padding: 1.5rem;
+    }
+    
+    .video-unavailable-state i {
+        font-size: 2rem;
+    }
+    
+    .related-thumbnail {
+        width: 120px;
+        height: 68px;
+    }
+    
+    .related-title {
+        font-size: 13px;
+    }
+    
+    .related-meta {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 576px) {
+    .video-player-container {
+        padding-bottom: 56.25%; /* Maintain aspect ratio on mobile */
+    }
+    
+    .related-thumbnail {
+        width: 100px;
+        height: 56px;
+    }
+    
+    .video-unavailable-state {
+        padding: 1rem;
+    }
+}
+
+/* Ensure proper text truncation */
+.text-truncate-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    color: #fff !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* Video card hover effects */
+.video-card:hover .thumbnail-overlay {
+    opacity: 1;
+}
+
+.thumbnail-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 8px;
+}
+
+.play-icon-overlay {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+}
+
+/* Subscribe button states */
+.subscribe-button {
+    background: #ff0000;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.subscribe-button:hover {
+    background: #cc0000;
+}
+
+.subscribe-button.subscribed {
+    background: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Like/Dislike buttons */
+.action-btn.active {
+    color: #1976d2;
+}
+
+.action-btn.active i {
+    color: #1976d2;
+}
+
+.related-info .text-white{
+    color: #000 !important;
 }
