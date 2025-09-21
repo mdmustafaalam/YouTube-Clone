@@ -33,7 +33,7 @@ const videoDatabase = [
         likes: 25420,
         dislikes: 543,
         subscribers: '850K',
-        tags: ['programming', 'react', 'tutorial', 'web development']
+        tags: ['Chill Deep House', 'Ethnic Deep House', 'Year Mix 2024', 'Relaxing Music', 'Study Music', 'Travel Vibes', 'Chillout Mix', 'Deep House 2024', 'Meditation Music', 'Divine Music']
     },
     {
         id: 2,
@@ -48,7 +48,7 @@ const videoDatabase = [
         likes: 18234,
         dislikes: 234,
         subscribers: '650K',
-        tags: ['react', 'javascript', 'frontend', 'tutorial']
+        tags: ['JavaScript Tutorial Hindi', 'JavaScript Full Course', 'Learn JavaScript in One Video', 'JavaScript for Beginners', 'JavaScript Hindi', 'Web Development Hindi', 'Chai aur Code', 'Frontend Development', 'JavaScript ES6', 'DOM Manipulation', 'Async JavaScript'],
     },
     {
         id: 3,
@@ -63,7 +63,7 @@ const videoDatabase = [
         likes: 8567,
         dislikes: 123,
         subscribers: '320K',
-        tags: ['css', 'grid', 'layout', 'design']
+        tags: ['Ek Deewane Ki Deewaniyat', 'Deewaniyat Song', 'Harshvardhan Sonam', 'Kunaal Song', 'Vishal Music', 'Romantic Song 2025', 'Soulful Hindi Song', 'New Hindi Songs', 'Love Song Hindi', 'Play DMF']
     },
     {
         id: 4,
@@ -78,7 +78,7 @@ const videoDatabase = [
         likes: 12456,
         dislikes: 167,
         subscribers: '420K',
-        tags: ['javascript', 'es6', 'programming', 'tutorial']
+        tags: ['Web Developer Roadmap 2025', 'Full Stack Developer 2025', 'Frontend Developer 2025', 'Backend Developer 2025', 'Learn Web Development', 'HTML CSS JavaScript', 'React Roadmap 2025', 'Node.js Roadmap', 'Modern Web Development', 'Code with Carry']
     },
     {
         id: 5,
@@ -93,7 +93,7 @@ const videoDatabase = [
         likes: 15678,
         dislikes: 289,
         subscribers: '590K',
-        tags: ['nodejs', 'backend', 'express', 'api']
+        tags: ['Amazon Rainforest 4K', 'Nature Documentary 4K', 'Amazon Wildlife', 'Rainforest Animals', 'Relaxing Nature Video', 'Amazon Jungle 4K', 'Wildlife Documentary', 'Amazon Rainforest Documentary', '4K Nature Relaxation', 'Whats Your Priority']
     },
     {
         id: 6,
@@ -108,7 +108,7 @@ const videoDatabase = [
         likes: 72534,
         dislikes: 89,
         subscribers: '280K',
-        tags: ['database', 'sql', 'design', 'data']
+        tags: ['Sabse Bada Yodhaa', 'KGF Chapter 1 Song', 'Yash KGF', 'Srinidhi Shetty', 'Prashanth Neel', 'KGF Movie Song', 'KGF BGM', 'Kannada Movie Songs', 'South Indian Songs', 'KGF Shorts']
     },
     {
         id: 7,
@@ -123,7 +123,7 @@ const videoDatabase = [
         likes: 56894,
         dislikes: 178,
         subscribers: '2.8M',
-        tags: ['study', 'relax', 'mind fresh', 'mood']
+        tags: ['Chill Deep House 2024', 'Ethnic Deep House', 'Divine Music Mix', 'Relaxing Music 2024', 'Study Music', 'Focus Music', 'Meditation Music', 'Mood Booster', 'Background Music', 'Deep House Mix Vol.49']
     },
     {
         id: 8,
@@ -138,7 +138,7 @@ const videoDatabase = [
         likes: 45126,
         dislikes: 112,
         subscribers: '10.8M',
-        tags: ['amazon', 'rainforest', 'forest', 'jungle']
+        tags: ['Software Engineering Tips', 'Aspiring Software Engineers', 'Coding Advice', 'Career Guidance for Programmers', 'Learn Programming', 'Tech Career Tips', 'Shradha Maam', 'Software Developer Journey', 'Programming Mindset', 'Coding Career 2025']
     },
     {
         id: 9,
@@ -153,7 +153,7 @@ const videoDatabase = [
         likes: 4756,
         dislikes: 120,
         subscribers: '3.88K',
-        tags: ['work', 'deep work', 'relaxation', 'listing']
+        tags: ['Ernest Shackleton', 'Endurance Expedition', 'Antarctica Survival Story', 'True Survival Stories', 'Historical Expeditions', 'Dhruv Rathee', 'Survival in Antarctica', '500 Days at Sea', 'Epic Survival Story', 'Adventure Documentary']
     },
     {
         id: 10,
@@ -168,7 +168,7 @@ const videoDatabase = [
         likes: 13000,
         dislikes: 78,
         subscribers: '420K',
-        tags: ['divine', 'devinemusic', 'mix', 'mood change']
+        tags: ['Brazil Volleyball Team', 'Top Volleyball Actions', 'Volleyball Highlights', 'Brazil Men’s Volleyball', 'Olympic Volleyball', 'Volleyball Skills', 'FIVB Volleyball', 'Sports Highlights', 'Power Volleyball', 'Volleyball Top 20']
     },
     {
         id: 11,
@@ -183,13 +183,13 @@ const videoDatabase = [
         likes: 13000,
         dislikes: 78,
         subscribers: '420K',
-        tags: ['divine', 'devinemusic', 'mix', 'mood change']
+        tags: ['16K Video ULTRA HD', 'Dolby Vision 16K HDR', '8K 12K 16K Demo', 'High FPS Video', 'Dolby Atmos Music', 'Nature Film 16K', 'Ultra HD Demo Video', '4K 8K 12K 16K', 'Video Ultra HD', 'HDR Video Demo']
     },
     {
         id: 12,
         title: 'India vs Oman | Match Highlights | DP World Asia Cup 2025',
-        channel: 'Galaxy Beats',
-        channelId: 'galaxyBeats',
+        channel: 'Sports Club',
+        channelId: 'sportsClub',
         views: 93988189,
         uploadTime: '29 April 2025',
         duration: '25:32',
@@ -198,7 +198,7 @@ const videoDatabase = [
         likes: 450560,
         dislikes: 112,
         subscribers: '304',
-        tags: ['galaxy', 'ella', 'beats', 'song']
+        tags: ['India vs Oman 2025', 'DP World Asia Cup Highlights', 'Cricket Highlights', 'India Cricket Team', 'Oman Cricket Team', 'Asia Cup 2025', 'Cricket Match Recap', 'Top Wickets and Shots', 'Indian Cricket Highlights', 'Sports Club Cricket']
     }
 ];
 
@@ -256,18 +256,18 @@ const Utils = {
 
     getChannelGradient: (channelId) => {
         const gradients = {
-            'codemaster': 'linear-gradient(45deg, #667eea, #764ba2)',
-            'webdevpro': 'linear-gradient(45deg, #ff6b6b, #ff8e8e)',
-            'jsacademy': 'linear-gradient(45deg, #4ecdc4, #44a08d)',
-            'designhub': 'linear-gradient(45deg, #a8edea, #fed6e3)',
-            'backendbeast': 'linear-gradient(45deg, #ff9a9e, #fecfef)',
-            'datasciencepro': 'linear-gradient(45deg, #a18cd1, #fbc2eb)',
-            'carrotId': 'linear-gradient(45deg, #d1af8cff, #fbc2ccff)',
-            'amazonForest': 'linear-gradient(45deg, #8c8ed1ff, #c2fbf2ff)',
-            'mindfulDeepWork': 'linear-gradient(45deg, #667eea, #764ba2)',
-            'divineMusic': 'linear-gradient(45deg, #ff6b6b, #ff8e8e)',
-            'ultraBeatsChillMusic': 'linear-gradient(45deg, #4ecdc4, #44a08d)',
-            'galaxyBeats': 'linear-gradient(45deg, #a8edea, #fed6e3)'
+            'devineMusic': 'linear-gradient(45deg, #667eea, #764ba2)',
+            'chaiaurCode': 'linear-gradient(45deg, #ff6b6b, #ff8e8e)',
+            'playDMF': 'linear-gradient(45deg, #4ecdc4, #44a08d)',
+            'codeWithHarry': 'linear-gradient(45deg, #a8edea, #fed6e3)',
+            'WhatsYourPriority': 'linear-gradient(45deg, #ff9a9e, #fecfef)',
+            'kgfShorts': 'linear-gradient(45deg, #a18cd1, #fbc2eb)',
+            'divineMusic': 'linear-gradient(45deg, #667eea, #764ba2)',
+            'shradhaDidi': 'linear-gradient(45deg, #8c8ed1ff, #c2fbf2ff)',
+            'dhruvRathee': 'linear-gradient(45deg, #d1af8cff, #fbc2ccff)',
+            'powerVolleyball': 'linear-gradient(45deg, #ff6b6b, #ff8e8e)',
+            'videoUltraHd': 'linear-gradient(45deg, #4ecdc4, #44a08d)',
+            'sportsClub': 'linear-gradient(45deg, #a8edea, #fed6e3)'
         };
         return gradients[channelId] || gradients['codemaster'];
     },
